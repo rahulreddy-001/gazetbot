@@ -1,0 +1,37 @@
+.pagination {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin: 20px 10vw;
+  max-width: 100%;
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+
+.page-button {
+  background: none;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  margin: 0 2px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-size: 14px;
+}
+
+.page-button.active {
+  background-color: #007bff;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .pagination {
+    padding: 10px 0;
+    overflow-x: auto;
+  }
+
+  .page-button {
+    padding: 5px 8px;
+    font-size: 12px;
+    margin: 0 3px;
+  }
+}

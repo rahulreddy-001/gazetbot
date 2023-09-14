@@ -1,0 +1,145 @@
+.header {
+  padding: 0px 20px;
+  background-color: #f0f0f0;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header_logo {
+  height: 40px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+.header_center {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  width: 50%;
+}
+
+.search-input-container {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  border: 1px solid #7a7a7a;
+  border-radius: 50px;
+  padding-left: 20px;
+  width: 100%;
+}
+
+.header_center_input {
+  flex: 1;
+  padding: 8px;
+  height: 30px;
+  border-radius: 50px;
+  width: 100%;
+  outline: none;
+  border: none;
+}
+
+.header_center_input::placeholder {
+  color: #999;
+  font-weight: 900;
+  font-size: 15px;
+}
+
+.search-icon {
+  margin-right: 8px;
+  color: #555;
+}
+
+.header_right {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.header_right_signin {
+  display: flex;
+  align-items: center;
+}
+
+.heart-icon {
+  color: #555;
+  font-size: 24px;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.heart-icon:hover {
+  background-color: #e0e0e0;
+  border-radius: 50px;
+  transition: all 0.2s ease-in-out;
+}
+
+.signin-container {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 50px;
+  margin-left: 20px;
+}
+
+.signin-container:hover {
+  background-color: #e0e0e0;
+  transition: all 0.2s ease-in-out;
+}
+
+.profile-icon {
+  color: #555;
+  font-size: 24px;
+}
+
+.signin-text {
+  margin: 0 8px;
+  font-size: 16px;
+  color: #555;
+  font-weight: 600;
+  user-select: none;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 0px 5px;
+    height: 60px;
+  }
+  .header_logo {
+    height: 30px;
+  }
+  .header_center {
+    padding: 1px;
+  }
+
+  .header_center_input {
+    height: 30px;
+    font-size: 15px;
+    padding: 2px;
+  }
+  .header_center_input::placeholder {
+    color: #999;
+    font-weight: 800;
+    font-size: 15px;
+  }
+
+  .search-icon {
+    margin-right: 5px;
+  }
+
+  .heart-icon {
+    padding: 0px;
+  }
+
+  .signin-container {
+    display: none;
+  }
+  .profile-icon {
+    font-size: 20px;
+  }
+
+  .signin-text {
+    font-size: 10px;
+  }
+}

@@ -1,0 +1,92 @@
+.card {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
+  min-width: 180px;
+  margin: 10px;
+  position: relative;
+}
+
+.card:hover {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-image img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.card-content {
+  padding: 8px 15px;
+}
+
+.card-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #6d6d6d;
+  margin-bottom: 8px;
+}
+
+.card-price {
+  font-size: 14px;
+  font-weight: 600;
+  color: #000000;
+}
+
+.card-offer {
+  font-size: 14px;
+  color: #3da82d;
+  margin-top: 4px;
+}
+
+.wishlist-button {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.heart-icon-card {
+  font-size: 22px;
+  color: #575757;
+}
+
+@media (max-width: 768px) {
+  .card {
+    min-width: calc(50% - 40px);
+    margin: 8px;
+  }
+
+  .card-title {
+    font-size: 12px;
+  }
+
+  .card-price {
+    font-size: 12px;
+  }
+
+  .card-offer {
+    font-size: 12px;
+  }
+
+  .wishlist-button {
+    bottom: 10px;
+    right: 10px;
+  }
+
+  .heart-icon-card {
+    font-size: 20px;
+  }
+}
